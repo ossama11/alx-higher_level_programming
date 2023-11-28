@@ -8,7 +8,7 @@ last_digit = int(number_str[-1])
 if number < 0:
     last_digit *= -1
 
-print("Last digit of", number_str, "is", last_digit, end=" ")
+print("Last digit of", int(number_str), "is", last_digit, end=" ")
 
 if last_digit > 5:
     print("and is greater than 5")
