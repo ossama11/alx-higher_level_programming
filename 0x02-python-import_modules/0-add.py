@@ -3,4 +3,6 @@ import add_0
 
 a = 1
 b = 2
-print(a, "+",b ,"=", add_0.add(a, b))
+
+result = add_0.add(a, b)
+print(f"{a} + {b} = {result}")
