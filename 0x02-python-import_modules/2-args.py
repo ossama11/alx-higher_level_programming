@@ -1,12 +1,13 @@
 #!/usr/bin/python3
 import sys
 
-if __name__ != "__main__":
-    exit()
+if __name__ == "__main__":
+    num_args = len(sys.argv) - 1
+    plural = "" if num_args == 1 else "s"
 
-len_argv = len(sys.argv)
-print(f"{len_argv - 1} argument:")
-for i in range(len_argv):
-    if i != 0:
-        print(f"{i}:", sys.argv[i])
-        i = i + 1
+    print(f"{num_args} argument{plural}:")
+    if num_args > 0:
+        for i in range(1, num_args + 1):
+            print(f"{i}: {sys.argv[i]}")
+else:
+    exit()
