@@ -2,7 +2,11 @@
 """make a class Square"""
 
 class Square:
-    """properties of square."""
+    """properties of square.
+    
+        Attributes:
+        size: size of a square (1 side).
+    """
     def __init__(self, size):
         """Creates new instances of square (1 side).
 
